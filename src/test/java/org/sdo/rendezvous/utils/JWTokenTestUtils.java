@@ -20,6 +20,12 @@ public class JWTokenTestUtils {
     return segments[JWT_HEADER_INDEX];
   }
 
+  /**
+   * Decoding base64 JSON message body.
+   * @param jwt JWT token
+   * @return HashMap
+   * @throws IOException for readValue function
+   */
   @SuppressWarnings("unchecked")
   public static HashMap<String, Object> getClaims(String jwt) throws IOException {
     String[] segments = jwt.split("\\.");

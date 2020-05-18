@@ -69,6 +69,11 @@ public class OwnershipVoucherVerifierTest {
   private HashGenerator hashGenerator;
   private IOwnershipVoucherVerifier ownershipVoucherVerifier;
 
+
+  /**
+   * Variable initialization.
+   * @throws Exception for InvalidOwnershipVoucherException, InvalidPublicKeyTypeException
+   */
   @BeforeMethod
   public void setUp() throws Exception {
     MockitoAnnotations.initMocks(this);

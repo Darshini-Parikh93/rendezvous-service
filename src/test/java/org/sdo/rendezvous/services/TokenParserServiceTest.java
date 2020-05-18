@@ -27,6 +27,10 @@ public class TokenParserServiceTest {
   @Mock private TO1JWTokenFactory to1JwTokenFactory;
   private TokenParserService tokenParserService;
 
+
+  /**
+   * Variable initialization.
+   */
   @BeforeMethod
   public void beforeMethod() {
     MockitoAnnotations.initMocks(this);

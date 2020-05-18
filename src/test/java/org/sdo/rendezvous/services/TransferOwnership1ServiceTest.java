@@ -103,6 +103,11 @@ public class TransferOwnership1ServiceTest extends PowerMockTestCase {
 
   @Mock private HelloSdoAckResponse helloSdoAckResponse;
 
+  /**
+   * Variable initialization.
+   * @throws Exception for InvalidSigInfoException, InvalidGroupIdException,
+   *                       InvalidGuidException and any other unhandled exception.
+   */
   @BeforeMethod
   public void beforeMethod() throws Exception {
     MockitoAnnotations.initMocks(this);

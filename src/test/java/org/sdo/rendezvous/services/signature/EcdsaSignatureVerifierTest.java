@@ -58,6 +58,10 @@ public class EcdsaSignatureVerifierTest {
 
   private EcdsaSignatureVerifier verifier;
 
+  /**
+   * Variable initialization.
+   * @throws Exception for InvalidPublicKeyTypeException and any other unhandled exceptions
+   */
   @BeforeMethod
   public void setUp() throws Exception {
     MockitoAnnotations.initMocks(this);

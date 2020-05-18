@@ -32,6 +32,11 @@ public class OwnerSignRequestFactory {
 
   }
 
+  /**
+   * Creating OwnerSignRequest message.
+   * @return OwnerSignRequest
+   * @throws Exception for unhandled exceptions
+   */
   public static OwnerSignRequest createOwnerSignRequest() throws Exception {
     OwnerSignTO0Data to0Data = new OwnerSignTO0Data();
     to0Data.setOwnershipVoucher(createValidOwnershipVoucher());
@@ -70,6 +75,10 @@ public class OwnerSignRequestFactory {
     return request;
   }
 
+  /**
+   * Creating ownership voucher.
+   * @return OwnershipVoucher
+   */
   public static OwnershipVoucher createValidOwnershipVoucher() {
 
     RendezvousInstr rendezvousInstr = new RendezvousInstr();

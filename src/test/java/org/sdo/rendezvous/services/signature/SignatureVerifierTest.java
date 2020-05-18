@@ -46,6 +46,9 @@ public class SignatureVerifierTest {
 
   private SignatureVerifier signatureVerifier;
 
+  /**
+   * Variable initialization.
+   */
   @BeforeMethod
   public void setUp() {
     MockitoAnnotations.initMocks(this);

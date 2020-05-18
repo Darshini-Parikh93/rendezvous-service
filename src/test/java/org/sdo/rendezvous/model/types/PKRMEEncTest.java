@@ -10,8 +10,10 @@ import org.testng.annotations.Test;
 
 public class PKRMEEncTest {
 
-  // modulus and exponent have been extracted from /Validation/TestData/OwnershipVoucher/p1.cert.pem
-  // instructions how to do it can be found /Validation/TestData/OwnershipVoucher/openssl_instructions.md
+  // modulus and exponent have been extracted from
+  // /Validation/TestData/OwnershipVoucher/p1.cert.pem
+  // instructions how to do it can be found
+  // /Validation/TestData/OwnershipVoucher/openssl_instructions.md
 
   private static final byte[] MODULUS =
       DatatypeConverter.parseHexBinary(

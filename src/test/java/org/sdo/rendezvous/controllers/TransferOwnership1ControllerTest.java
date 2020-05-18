@@ -102,6 +102,11 @@ public class TransferOwnership1ControllerTest extends PowerMockTestCase {
 
   private TransferOwnership1Controller controller;
 
+  /**
+   * Variable initialization.
+   * @throws Exception for exceptions: InvalidGuidException, InvalidSigInfoException,
+   *                    GuidBlacklistedException, InvalidGroupIdException
+   */
   @BeforeMethod
   public void setUp() throws Exception {
     PowerMockito.mockStatic(RequestContextHolder.class);

@@ -33,6 +33,11 @@ public class VersionedTO1DataSerializerTest {
 
   private OwnerSignTO1Data to1Data;
 
+  /**
+   * Variable initialization.
+   * @throws InvalidIpAddressException for handling exception thrown while
+   *                                   configuring TO1 data.
+   */
   @BeforeMethod
   public void setUp() throws InvalidIpAddressException {
     MockitoAnnotations.initMocks(this);

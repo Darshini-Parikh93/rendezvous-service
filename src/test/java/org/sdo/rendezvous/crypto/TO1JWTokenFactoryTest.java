@@ -20,7 +20,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-@PowerMockIgnore({"com.sun.org.apache.xerces.*", "javax.xml.*", "org.xml.*", "javax.management.*", "javax.crypto.*"})
+@PowerMockIgnore({"com.sun.org.apache.xerces.*", "javax.xml.*", "org.xml.*",
+                  "javax.management.*", "javax.crypto.*"})
 @PrepareForTest(TimestampUtils.class)
 public class TO1JWTokenFactoryTest extends PowerMockTestCase {
 

@@ -52,6 +52,10 @@ public class TransferOwnership0ControllerTest extends PowerMockTestCase {
 
   private TransferOwnership0Controller controller;
 
+  /**
+   * Variable initialization.
+   * @throws Exception for unhandled exceptions
+   */
   @BeforeMethod
   public void setUp() throws Exception {
     PowerMockito.mockStatic(RequestContextHolder.class);
