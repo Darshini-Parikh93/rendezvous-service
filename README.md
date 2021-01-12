@@ -117,7 +117,7 @@ Both keystore and truststore are used to store SSL certificates in the Java* pro
 
 *The examples of keystore and truststore can be found in the directory certs:*
 ```
-keystore - "rendezvous-keystore.jks"
+keystore - "rendezvous-keystore.p12"
 truststore -  "rendezvous-trustedRootCA.jks"
 ```
 Default passwords for both: 123456
@@ -143,7 +143,7 @@ JVM options can be set to configure Rendezvous service:
 | server.port | Rendezvous Service host port for HTTPS - default 8000. To configure HTTP port (default: 8001) for the service, update application.properties|
 | rendezvous.verificationServiceHost | Verification service host address (https://verify.epid-sbx.trustedservices.intel.com or https://verify.epid.trustedservices.intel.com) |
 | **Keystores** | You can use default keystore and trustore or you can generate your own, please review section [keystores](#generate-keystores) |
-| javax.net.ssl.trustStore | truststore file - default rendezvous-keystore.jks|
+| javax.net.ssl.trustStore | truststore file - default rendezvous-keystore.p12|
 | javax.net.ssl.trustStorePassword | truststore password - default password: 123456|
 | server.ssl.key-store | keystore file - default rendezvous-trustedRootCA.jks|
 | server.ssl.key-store-password | keystore password - default password: 123456|

@@ -3,7 +3,7 @@
 
 #!/usr/bin bash
 
-java -Dserver.ssl.key-store=./certs/rendezvous-keystore.jks -Dserver.ssl.key-store-password=123456 \
+java -Dserver.ssl.key-store=./certs/rendezvous-keystore.p12 -Dserver.ssl.key-store-password=123456 \
      -Djavax.net.ssl.trustStore=./certs/rendezvous-trusterRootCA.jks -Djavax.net.ssl.trustStorePassword=123456 \
      -Dserver.port=8000 -Drendezvous.verificationServiceHost=https://verify.epid-sbx.trustedservices.intel.com \
      -Dspring.profiles.active=production \

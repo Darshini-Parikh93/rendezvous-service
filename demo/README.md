@@ -41,7 +41,7 @@ The hashes for the default public keys present in iot-platform-sdk and supply-ch
 **NOTE** `hashlist.redis` file adds default hash in allowlist when container starts. To add additional credentials to the redis DB while container is running, user needs to login to the container using [Docker Container Login Command](#docker-container-login) and add the credentials using instructions in the [Secure Device Onboard Rendezvous Service README](https://github.com/secure-device-onboard/rendezvous-service/#trust-management). Another way of adding other credentials is to add them in `hashlist.redis` file and restart the docker.
 
 ## Create Java Keystore Files
-See instructions in the [Secure Device Onboard Rendezvous Service README](https://github.com/secure-device-onboard/rendezvous-service/#generate-keystores). Once the keystore and truststore files are created, update docker-compose.yml to reflect the file name, path and password. The default configured keystore is /certs/rendezvous-keystore.jks and the default configured truststore is /certs/rendezvous-truststore.jks. Default passwords for both: 123456
+See instructions in the [Secure Device Onboard Rendezvous Service README](https://github.com/secure-device-onboard/rendezvous-service/#generate-keystores). Once the keystore and truststore files are created, update docker-compose.yml to reflect the file name, path and password. The default configured keystore is /certs/rendezvous-keystore.jks and the default configured truststore is /certs/rendezvous-truststore.p12. Default passwords for both: 123456
 
 The rendezvous service will not start if the keystore is not present. If truststore is not present, rendezvous service will not be able to communicate with rendezvous verification service.
 

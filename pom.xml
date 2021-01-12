@@ -231,7 +231,7 @@
                 <resource>
                   <directory>${project.basedir}/certs</directory>
                   <includes>
-                    <include>rendezvous-keystore.jks</include>
+                    <include>rendezvous-keystore.p12</include>
                     <include>rendezvous-trusterRootCA.jks</include>
                   </includes>
                 </resource>

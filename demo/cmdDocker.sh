@@ -2,7 +2,7 @@
 # Copyright 2019 Intel Corporation
 # SPDX-License-Identifier: Apache 2.0
 
-SSL_KEY_STORE="rendezvous-keystore.jks"
+SSL_KEY_STORE="rendezvous-keystore.p12"
 JAVA_SSL_PARAMS="-Dserver.ssl.key-store=/home/sdouser/certs/$SSL_KEY_STORE -Dserver.ssl.key-store-password=$SSL_KEY_STORE_PASSWORD"
 JAVA_REDIS_PARAMS="-Dredis.host=$REDIS_HOST -Dredis.password=$REDIS_PASSWORD -Dredis.port=$REDIS_PORT"
 TRUST_STORE_SSL_PARAM="-Djavax.net.ssl.trustStore=/home/sdouser/certs/rendezvous-trusterRootCA.jks -Djavax.net.ssl.trustStorePassword=$SSL_TRUST_STORE_PASSWORD"
